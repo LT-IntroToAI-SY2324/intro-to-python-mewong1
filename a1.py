@@ -52,13 +52,13 @@ from typing import List, TypeVar
 # print(factorial(7))
 
 
-T = TypeVar("T")
+# T = TypeVar("T")
 
-def every_other(lst: List[T]) -> List[T]:
-    for var in range(len(lst)):
-        print(var)
+# def every_other(lst: List[T]) -> List[T]:
+#     for var in range(len(lst)):
+#         print(var)
 
-    return T
+#     return T
 # """Takes a list and returns a list of every other element in the list, starting with
 #     the first.
 
@@ -72,7 +72,24 @@ def every_other(lst: List[T]) -> List[T]:
 #     raise NotImplementedError("every_other")
 
 
-# def sum_list(lst: List[int]) -> int:
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# def sum_list(lst: List[int]) -> int:  
+#     sum1 = 0
+#     for r in range(0, len(lst),2):
+#         sum1 += r
+#     return sum1
+
+# print(sum_list(lst))
+
+
+# def sum_list(lst: List[int]) -> int:  
+#     sum1 = 0
+#     for r in range(len(lst)):
+#          sum1 += r
+#     return sum1
+
+# print(sum_list(lst))
+
 #     """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
 #     use the built in function `sum`.
 
@@ -86,6 +103,15 @@ def every_other(lst: List[T]) -> List[T]:
 
 
 # def mean(lst: List[int]) -> float:
+#     sum1 = 0
+#     count = 0
+#     for r in range(len(lst)):
+#         sum1 += r
+#         count += 1
+#     return sum1/count
+
+# print(mean(lst))
+
 #     """Takes a list of numbers, and returns the mean of the numbers.
 
 #     Args:
@@ -97,7 +123,19 @@ def every_other(lst: List[T]) -> List[T]:
 #     raise NotImplementedError("mean")
 
 
-# def median(lst: List[int]) -> float:
+def median(lst: List[int]) -> float:
+    sum1 = 0
+    count = 0
+    for r in range(len(lst)):
+        sum1 += r
+        count += 1
+    if lst(len)%2 == 1:
+        return lst[(count-1)/2]
+    else:
+        return (lst[count/2+1] + lst[count/2])/2
+
+
+print(median(lst))
 #     """Takes an ordered list of numbers, and returns the median of the numbers.
 
 #     If the list has an even number of values, it computes the mean of the two center

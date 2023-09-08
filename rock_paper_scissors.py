@@ -11,6 +11,7 @@ def get_choices():
     options = ["rock", "paper", "scissors"]
     computer_choice = random.choice(options)
     choices = {"player": player_choice, "computer": computer_choice}
+    print (choices)
 
     if player_choice == computer_choice:
         return "You tied!"
@@ -24,13 +25,14 @@ def get_choices():
             return "You won!"
         elif computer_choice == "scissors":
             return "You lost!"
-     elif player_choice == "scissors":
+    elif player_choice == "scissors":
         if computer_choice == "rock":
             return "You lost!"
         elif computer_choice == "paper":
             return "You won!"
+    else:
+        return("Re-enter choice correctly")
     # return player_choice
-    return choices
 
 choices = get_choices()
 
