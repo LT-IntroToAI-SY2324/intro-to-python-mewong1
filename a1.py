@@ -72,7 +72,7 @@ from typing import List, TypeVar
 #     raise NotImplementedError("every_other")
 
 
-lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 34, 100]
 # def sum_list(lst: List[int]) -> int:  
 #     sum1 = 0
 #     for r in range(0, len(lst),2):
@@ -123,19 +123,14 @@ lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 #     raise NotImplementedError("mean")
 
 
-def median(lst: List[int]) -> float:
-    sum1 = 0
-    count = 0
-    for r in range(len(lst)):
-        sum1 += r
-        count += 1
-    if lst(len)%2 == 1:
-        return lst[(count-1)/2]
-    else:
-        return (lst[count/2+1] + lst[count/2])/2
+# def median(lst: List[int]) -> float:
+#     count = len(lst)
+#     if count%2 == 1:
+#          return lst[int(count/2)]
+#     else:
+#          return (lst[int(count/2)] + lst[int((count-1)/2)]) /2.0
 
-
-print(median(lst))
+# print (median(lst))
 #     """Takes an ordered list of numbers, and returns the median of the numbers.
 
 #     If the list has an even number of values, it computes the mean of the two center
@@ -149,8 +144,9 @@ print(median(lst))
 #     """
 #     raise NotImplementedError("median")
 
-
-# def duck_duck_goose(lst: List[str]) -> List[str]:
+lst_names= ["megan", "jane", "nina", "youin", "berg"]
+def duck_duck_goose(lst: List[str]) -> List[str]:
+    
 #     """Given an list of names (strings), play 'duck duck goose' with it, knocking out
 #     every third name (wrapping around) until only two names are left.
 
