@@ -13,13 +13,14 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 ## Reflection Questions
 
 1. What is your initial thoughts about the python programming language?
-
+I think python might be a little easier to use than java in the long run. I think the syntax makes sense.
 
 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
-Python seems a little more simple than 
+Python seems a little more simple than java. The logic is the same but the syntax is different. This includes differences in sues of semi colons and colons, indents, etc. 
 
 
 
 3. What are some things that you learned through this assignment?
+I learned how to use loops and if statements in python. I became more familiarized with the syntax and also refreshed some of my moding skills.
