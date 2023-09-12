@@ -146,7 +146,15 @@ from typing import List, TypeVar
 
 lst_names= ["megan", "jane", "nina", "youin", "berg"]
 def duck_duck_goose(lst: List[str]) -> List[str]:
-    
+    indx = 0
+    while len(lst)>2:
+        indx = (indx+2) % len(lst)
+        removed = lst.pop(indx)
+        print(removed + " is removed")
+
+    return lst_names
+
+print(duck_duck_goose(lst_names))
 #     """Given an list of names (strings), play 'duck duck goose' with it, knocking out
 #     every third name (wrapping around) until only two names are left.
 
