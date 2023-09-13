@@ -13,7 +13,7 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 ## Reflection Questions
 
 1. What is your initial thoughts about the python programming language?
-I think python might be a little easier to use than java in the long run. I think the syntax makes sense.
+I think python might be a little easier to use than java in the long run. I think the syntax makes sense and easier to learn than Java might be.
 
 
 
