@@ -14,6 +14,8 @@ check, if you do not complete the generative AI portion of the assignment.
 
 from typing import List, TypeVar
 
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 34, 100]
+
 
 # def absolute(n: int) -> int:
 #     """Gives the absolute value of the passed in number. Cannot use the built in
@@ -52,13 +54,14 @@ from typing import List, TypeVar
 # print(factorial(7))
 
 
-# T = TypeVar("T")
+T = TypeVar("T")
 
-# def every_other(lst: List[T]) -> List[T]:
-#     for var in range(len(lst)):
-#         print(var)
+def every_other(lst: List[T]) -> List[T]:
+    result = lst[::2]
 
-#     return T
+    return result
+
+print(every_other(lst))
 # """Takes a list and returns a list of every other element in the list, starting with
 #     the first.
 
@@ -72,7 +75,6 @@ from typing import List, TypeVar
 #     raise NotImplementedError("every_other")
 
 
-# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 34, 100]
 # def sum_list(lst: List[int]) -> int:  
 #     sum1 = 0
 #     for r in range(0, len(lst),2):
@@ -144,17 +146,17 @@ from typing import List, TypeVar
 #     """
 #     raise NotImplementedError("median")
 
-lst_names= ["megan", "jane", "nina", "youin", "berg"]
-def duck_duck_goose(lst: List[str]) -> List[str]:
-    indx = 0
-    while len(lst)>2:
-        indx = (indx+2) % len(lst)
-        removed = lst.pop(indx)
-        print(removed + " is removed")
+# lst_names= ["megan", "jane", "nina", "youin", "berg"]
+# def duck_duck_goose(lst: List[str]) -> List[str]:
+#     indx = 0
+#     while len(lst)>2:
+#         indx = (indx+2) % len(lst)
+#         removed = lst.pop(indx)
+#         print(removed + " is removed")
 
-    return lst_names
+#     return lst_names
 
-print(duck_duck_goose(lst_names))
+# print(duck_duck_goose(lst_names))
 #     """Given an list of names (strings), play 'duck duck goose' with it, knocking out
 #     every third name (wrapping around) until only two names are left.
 
